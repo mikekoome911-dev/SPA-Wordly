@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictonary App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+CU+Guides&family=Rubik+Spray+Paint&family=Rubik+Storm&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dictionary-app">
+        <header>
+        <h1>WORDLY</h1> 
+        </header>
+    
+    <form id="search-form" class="search-form" role="search" aria-label="Dictonary search">
+        <div class="input-wrapper">
+        <input type="text" id="search-input" placeholder="search for a word..." required aria-label="Enter a word to search for meaning" autocomplete="off">
+        </div>
+        <button type="submit" id="search-btn" aria-label="Search word">Search</button>
+    </form>
+    <div id="status-container" role="status" aria-live="polite">
+        <p id="status-message">-Type a word above to see its definitions, pronunciation audio, and synonyms.</p>
+    </div>
+    
+    <section id="results-display" class="results-box hidden" aria-labelledby="word-heading">
+        <header class="results-header">
+            <div>
+            <h2 id="word-heading">Word</h2>
+            <p id="word-phonetic" class="phonetic-text">/text/</p>
+            </div>
+
+            <button id="audio-trigger-btn" class="audio-button hidden" aria-label="Play pronunciation audio">Listen</button>
+            <audio id="audio-element"  src=""></audio>
+            </header>
+      
+        
+        <div id="dynamic-lexicon-content"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

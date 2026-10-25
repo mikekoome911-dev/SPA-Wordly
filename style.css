@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header h1 {
+    text-align: center;
+    margin: 0;
+    margin-right: 6cm;
+    margin-left: 6cm;
+    box-sizing: border-box;
+    background-color: plum;
+    color: aquamarine;
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400px;
+    letter-spacing: 2px;
+    
+}
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTspB2xyUKEzVp6aPDEc0DRA6TzuiRpWpVfBnD6nYjQuA&s=10);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+#search-form {
+    margin-top: 24px;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+   
+}
+#search-input {
+    padding-left: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    color: black;
+    background-color: aqua;
+    border: 1px solid black;
+}
+#search-btn {
+    margin-left: 5px;
+    background-color: yellow;
+    color: red;
+    border: 1px solid black;
+}
+#search-btn:hover {
+    background-color: #ff84a7;
+}
+#search-btn:active {
+    transform: scale(0.96);
+}
+#status-container {
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: "Edu QLD Hand", system-ui;
+    font-size: medium;
+    font-weight: bold;
+}
+.results-box {
+    border-top: 2px solid #edf2f7;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+#word-heading {
+    font-size: 1.8rem;
+    color: brown;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+.phonetic-text {
+    font-size: 1rem;
+    color: black;
+    font-style: italic;
+    margin-top: 4px;
+    margin-left: 24px;
+}
+.audio-button {
+    background-color: greenyellow;
+    color: coral;
+    border: 1px solid aquamarine;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.audio-button:hover {
+    background-color: aqua;
+    color: black;
+}
+.lexical-unit {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+.part-of-speech-label {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: olivedrab;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-left: 20px;
+      
+}
+.definition-sentence {
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+       
+}
+.hidden {
+    display: none !important;
+}
